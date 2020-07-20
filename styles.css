@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+main {
+    background-color: #e9eaea;;
+}
+
+/* Header */
+
+h1,
+.intro {
+    text-align: center;
+}
+
+h1,
+h2,
+legend {
+    font-size: 19px;
+    color: #444141;
+}
+
+h1 {
+    background: #444141;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 1.5em;
+}
+
+.intro {
+    border-bottom: 4px solid #444141;
+    margin: 1.2em 1.2em .3em;
+}
+
+h2 {
+    padding-top: .8em;
+}
+
+p {
+    color: #8a8585;
+    padding-bottom: 1.2em;
+    font-size: 14px;
+}
+
+/*=========== Form Elements =============*/  
+
+form {
+    margin: .2em 1.2em;
+    border-top: 2px solid;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 1em 0 0 0
+}
+
+legend {
+    padding: 18px 0;
+    font-weight: bold;
+}
+
+.border {
+    border-top: 2px solid #444141;
+    width: 100%;
+}
+
+label {
+    display: block;
+    color: #8a8585;
+}
+
+label.textarea {
+    padding: 1em 0;
+}
+
+.format {
+    padding-bottom: 0;
+}
+
+#zip {
+    width: 50%;
+}
+
+input,
+#state {
+    width: 100%;
+    background-color: #f0f1f3;
+    color: #c6c9cc;
+    margin: .5em 0;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input:focus,
+#state:focus,
+textarea:focus {
+    outline: none !important;
+    border: 2px solid #444141;
+    transition-duration: 4s;
+}
+
+input::placeholder { 
+    text-align: right;
+    font-style: italic;
+    color: #c6c9cc;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+textarea::placeholder {
+    color: #c6c9cc;
+    font-style: italic;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: .8em;
+}
+
+textarea {
+    background-color: #f0f1f3;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1.5em;
+}
+
+input[type="button"] {
+    color: #fff;
+    background-color: #31b1ab;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    font-style: italic;
+}
+
+/* media quiries */
+
+@media(min-width: 768px) {
+    main {
+        max-width: 70%;
+        margin: auto;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    label {
+        width: 40%;
+    }
+    .zip-label {
+        width: 28.5%;
+    }
+    #zip {
+        width: 30%;
+    }
+    label.textarea {
+        width: auto;
+    }
+}
